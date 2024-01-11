@@ -2,7 +2,7 @@ import React from 'react'
 
 function NotFound()  {
   return (
-    <body className='bg-warning p-1'>
+    <body className='bg-warning' style={{padding: ".1px"}}>
       <div
         class="border border-light w-50 my-5 rounded-2 bg-light shadow-lg "
         style={{ margin: "auto" }}

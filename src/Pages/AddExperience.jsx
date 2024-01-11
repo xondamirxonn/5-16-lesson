@@ -10,6 +10,9 @@ const AddExperience = () => {
   const [to, setTo] = useState("");
 
   const navigate = useNavigate()
+   const GoBack = () => {
+     navigate("/dashboard");
+   };
   const Submit = (e) => {
     e.preventDefault()
 
@@ -78,7 +81,7 @@ const AddExperience = () => {
         ></textarea>
         <div className="d-flex gap-3 my-3">
           <button className="btn btn-info">Submit</button>
-          <button className="btn btn-light">Go Back</button>
+          <button className="btn btn-light" onClick={GoBack}>Go Back</button>
         </div>
       </form>
     </div>
